@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Form</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <main class="card card-subscribe" id="subscribe-card">
+        
+        <img src="assets/philip-oroni-7rMD7zh5SKo-unsplash.jpg" alt="Newsletter icon" class="header-image">
+        
+        <h1>Subscribe to our Newsletter</h1>
+        <p class="subtitle">Join thousands getting emails in their inbox.</p>
+
+        <form id="subscribe-form" novalidate>
+            <div class="form-group">
+                <div class="form-header">
+                    <label for="email-input">Email address</label>
+                    <span id="email-error">Please enter the valid email</span>
+                </div>
+                <input type="email" id="email-input" placeholder="email@example.com">
+            </div>
+            
+            <button type="submit">Subscribe</button>
+        </form>
+    </main>
+
+    <aside class="card card-success" id="success-card">
+        
+        <div class="success-icon-wrapper">
+            <img src="assets/icon.jpg" alt="Success checkmark">
+        </div>
+        
+        <h2>Your subscription has been placed for <span id="user-email"></span>!</h2>
+        <button id="dismiss-button">Thanks!</button>
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+</html>
