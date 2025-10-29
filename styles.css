@@ -1,4 +1,4 @@
-/* --- Базові стилі --- */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #FEEEEE;
+    background-color: pink;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -18,7 +18,7 @@ body {
     flex-wrap: wrap;
 }
 
-/* --- Стилі Карток (ЗАГАЛЬНЕ) --- */
+
 .card {
     background-color: #FFFFFF;
     padding: 24px;
@@ -27,12 +27,9 @@ body {
     width: 100%; 
 }
 
-/* ==================================
-КАРТКА 1: ПІДПИСКА (ОСНОВНА)
-==================================
-*/
+
 .card-subscribe {
-    max-width: 640px; /* Широка картка */
+    max-width: 640px; 
 }
 
 .card-subscribe .header-image {
@@ -48,7 +45,7 @@ body {
     font-weight: 700;
     margin-bottom: 20px;
     line-height: 1.1;
-    white-space: nowrap; /* h1 в один рядок */
+    white-space: nowrap; 
 }
 
 .card-subscribe .subtitle {
@@ -117,16 +114,12 @@ button:hover {
 }
 
 
-/* ==================================
-КАРТКА 2: УСПІХ (SENKЮ)
-==================================
-*/
 
 .card-success {
     display: none; 
     padding: 40px; 
     
-    /* ОСЬ ЗМІНА: теж робимо її широкою */
+
     max-width: 640px; 
     
     flex-direction: column;
